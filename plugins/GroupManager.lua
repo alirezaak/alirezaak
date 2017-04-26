@@ -3617,7 +3617,7 @@ end
 
 if matches[1] == "sudohelp" and is_mod(msg) or  matches[1] == "Sudohelp" and is_mod(msg) or  matches[1] == "راهنمای صاحب" and is_mod(msg) then
 text = [[
-⚜*мαTdσя TG*
+⚜*telejet TG*
 
 *Visudo* `[username|id|reply]`
 🔹_اضافه کردن سودو_
