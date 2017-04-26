@@ -179,13 +179,13 @@ local lang = redis:get(hash)
   -- determine if table is empty
   if next(data[tostring(msg.to.id)]['mods']) == nil then --fix way
   if not lang then
-    return "》 _иø_ *мαđeяαтøя* _łи тħłš gяøυρ_ ‼️\n*〰〰〰〰〰〰〰〰*\n🗯_In this category currently has no Manager selected_\nɳαɱҽ : "..msg.from.first_name.."\nυʂҽɾɳαɱҽ : [@"..(check_markdown(msg.from.username) or 'No υʂҽɾɳαɱҽ').."]"
+    return "》 _иø_ *@TeleJet_Team* _łи тħłš gяøυρ_ ‼️\n*〰〰〰〰〰〰〰〰*\n🗯_In this category currently has no Manager selected_\nɳαɱҽ : "..msg.from.first_name.."\nυʂҽɾɳαɱҽ : [@"..(check_markdown(msg.from.username) or 'No υʂҽɾɳαɱҽ').."]"
 else
    return "》 _در گروه_ #معاونی _وجود نداره_ ‼️\n*〰〰〰〰〰〰〰〰*\n🗯در این‌ گروه در حال حاظر هیچ معاونی انتخاب نشده است.\n نام :"..msg.from.first_name.." \n یوزنیم : [@"..(check_markdown(msg.from.username) or 'یوز نیم موجود نیست').."]"
   end
 end
 if not lang then
-   message = '⚜*lłšт øf мøđeяαтøя 👥 :*\n'
+   message = '⚜*lłšт øf @TeleJet_Team 👥 :*\n'
 else
    message = '⚜لیست معاون های گروه👥 :*\n'
 end
@@ -218,7 +218,7 @@ else
   end
 end
 if not lang then
-   message = '⚜*lłšт øf мøđeяαтøя 👥 :*\n'
+   message = '⚜*lłšт øf @TeleJet_Team 👥 :*\n'
 else
    message = '⚜لیست معاون های گروه👥 :*\n'
 end
