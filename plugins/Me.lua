@@ -1,7 +1,7 @@
 ﻿--Start by @TeleJetTeam :)
 do
 
-local function matador(msg, matches)
+local function TeleJetTeam(msg, matches)
 local uhash = 'user:'..msg.from.id
 local user = redis:hgetall(uhash)
 local um_hash = 'msgs:'..msg.from.id..':'..msg.to.id
@@ -26,7 +26,7 @@ return {
     "^[!/#]([Mm]e)$",
 	"^([Mm]e)$",
     },
-  run = matador
+  run = TeleJetTeam
 }
 end
 --@TeleJetTeam
